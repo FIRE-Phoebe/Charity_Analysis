@@ -25,61 +25,82 @@ Using bulleted lists and images to support your answers, address the following q
   (**Dataset has 2 unique values in each columns will be removed for data analysis**)
 
 ### Compiling, Training, and Evaluating the Model
-#### First Attempt: achieved the target model accuracy. Accuracy *76.91%*
-- Add additional layers by using sigmoid activation that might improve the performance of accuracy. And sigmid activation is better to identified by a characteristic, and will help the model with classification.
-- Total params from 5,981 increased to 56,601
-- Decrease the number of values for CLASSIFICATION Bins from 6 to 4.
-- Decrease the number of values for APPLICATION_TYPE Bins from 9 to 8
-- Add additional feature and make 122bins.
-- Create 2 Bins for feature ASK_AMT. 
-See attachment for more details:
+#### First Attempt: Accuracy *76.91%* 
+In order to achieve a target predictive accuracy that over 75%, we adjust the input data to ensure that there are no variables or outliers that might confuse in the model.
+- Drop few more columns such as 'ORGANIZATION', 'STATUS', 'SPECIAL_CONSIDEATIONS'.
+   - Create 2 Bins for feature ASK_AMT. 
+   - Add additional feature and make 122bins.
+   - Decrease the number of values for CLASSIFICATION Bins from 6 to 4.
+   - Decrease the number of values for APPLICATION_TYPE Bins from 9 to 8
+- Add more hidden layers & Using different activation functions
+   - Add additional layers by using sigmoid activation, which improve the performance of accuracy. And sigmid activation is better to identified by a characteristics. Through this process, it will help the model with classification.
+   - Total params from 5,981 increased to 56,601
 
-  <img align= 'center' src='Resources/images/1st_att_5.PNG' width=500 height=400 >
 
-- Evauation for 1st attempt: see history accuracy figure
+      See attachment for more details:
+<p align=center>
+  <img src='Resources/images/1st_att_5.PNG' width=500 height=400 >
 
-    <img src='Resources/images/Attemp_1.PNG'  width=500 height=300 >
+   </p>
+   
+- Evauation for 1st attempt: 
+We plot the history accuracy data to visualize the result. Accuracy is 76.91%.
+<p align=center>
+   <img src='Resources/images/Attemp_1.PNG'  width=450 height=300 >
+</p>
 
 #### Second Attempt: achieved the target model accuracy. Accuracy *77.13%*
-- Increase Total params 128,401
-- Increase input features
-- Unbinned features ASK_AMOUNT
-- Increase neurons on hidden layers
+- Adjusting the input data
+   - Increase input features
+   - Unbinned features ASK_AMOUNT
+- Adding more neurons to a hidden layer.
    - layer 1 increased 100 by using relu activation
    - layer 2 increased 100 by using sigmoid activation
    - layer 3 increased 50 by using relu activation that helps the model toassess input data differently and lower complexity features.
+   - Total params to 128,401
 
-See attachment for more details:
-
-  <img align= 'center' src='Resources/images/2nd_att.PNG' width=500 height=400 >
+      See attachment for more details:
+      
+<p align=center>
+   
+  <img src='Resources/images/2nd_att.PNG' width=500 height=400 >
+ 
+</p>
   
-- Evauation for 2st attempt: see history accuracy figure
+- Evauation for 2st attempt: 
+We plot the history accuracy figure to visualize the result. We increased the accuracy by 0.22%.
 
-    <img src='Resources/images/Attemp_2.PNG'  width=500 height=300 >
-    
+<p algin=ceter>
+   
+<img src='Resources/images/Attemp_2.PNG'  width=500 height=300 ></p>
+
 #### Third Attempt: achieved the target model accuracy. Accuracy *77.21%*
-- Decrease epochs from 100 to 50 that shows the result is similar with the 2nd attempt. However, it saves time to get the same result.
-- Evauation for 3st attempt: see history accuracy figure
+- Adding or reducing the number of epochs to the training regimen.
+   - Decrease epochs from 100 to 50 
+- Evauation for 3st attempt:
+As we see the hisotry of accuracy, the figure shows the accuracy imporved by 0.08%.
+<p align=center>
+<img src='Resources/images/Attemp_3.PNG'  width=500 height=300 >
+</p>
 
-    <img src='Resources/images/Attemp_3.PNG'  width=500 height=300 >
-    
 #### Final Attempt: achieved the target model accuracy. Accuracy *77.42%*
-- Increase the number of bins for NAME to 100
-- Add additional input features
-- Total params: 57,801
+- Adjusting the input data
+   - Increase the number of bins for NAME to 100
 - Optimize the numbers of hidden layers
   - layer 1: 200 by using 'relu' activation
   - layer 2: 100 by using 'relu' activation
   - layer 3: 50 by using 'sigmoid' activation
-- Set epochs to 50
-- Evauation for final attempt: see history accuracy figure
+- Optimize the number of epochs to the training regimen.
+   - Set epochs to 50
+   - Total params: 57,801
 
-    <img src='Resources/images/Final_Attemp.PNG'  width=500 height=300 >
+- Evauation for final attempt: 
+According to the figure, the final attempt increased the accuracy by **0.21%**, and total improved performance by **4.98%**.
+<p align=center>
+<img src='Resources/images/Final_Attemp.PNG'  width=500 height=300 >
+</P>   
     
-    
-neurons, layers, and activation functions did you select for your neural network model, and why?
-Were you able to achieve the target model performance?
-What steps did you take to try and increase model performance?
+
 
 #### Resources:
 Explaination for each columns that capture metadata:
