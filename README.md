@@ -4,7 +4,7 @@
 Neural Network Charity Analysis program uses Deep Learning Models to analyze over 34,000 organizations that have received funding from business team will be successful. We use dataset features and target to help foundation predict the company's investment. Our goal is to optimize the Neural Network Deep Learning Model to achieve a target predictive accuracy more than 75%. 
 
 ## Results
-Using bulleted lists and images to support your answers, address the following questions.
+1st Attempt has improved **4.47%** for predict accuracy, 2nd and 3rd attempt only improved total **0.3%**, and final attempt improved performance by **0.21%**.
 
 ### Data Preprocessing
 - Target: 'IS_SUCCESSFUL' that predict whether applicants will be successful if funded by Alphabet Soup Business.
@@ -100,8 +100,7 @@ According to the figure, the final attempt increased the accuracy by **0.21%**, 
 </P>   
     
 
-
-#### Resources:
+### Resources:
 Explaination for each columns that capture metadata:
   - EIN and NAME — Identification columns
   - APPLICATION_TYPE — Alphabet Soup application type
@@ -116,4 +115,6 @@ Explaination for each columns that capture metadata:
   - IS_SUCCESSFUL — Was the money used effectively
 
 ## Summary
-Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and explain your recommendation.
+According to the Charity analysis results, we adjust variables that consider to be the features which makes a big difference in our performance. In the 1st attempt, the model loss improved from *55.54%* to *47.75%* and accuracy have already achieve at *76.91%* after adding NAME feature, bins, and drop few noisy variables. In addition, we increase the number of neurons, hidden layers and activation to analyze the model that shows model improvements. Use different activation function will access the input data differently that might help the model to analyze data. Noisy variables, the number of neurons and hidden layers, activation function and epochs are the key factors to effect the model performance. Thus, we adjust those key factors on other attempts to optimize Neural Network. We are successful ultilize the model by almost 5% and acheive our target predictive accuracy at **77.42%**. In the future studies, we recommand to create for loop to find the best number of neurons, layers and activation functions to achieve the highest accuracy score for model optimization. 
+
+
