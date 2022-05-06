@@ -70,9 +70,9 @@ We plot the history accuracy data to visualize the result. Accuracy is 76.91%.
 - Evauation for 2st attempt: 
 We plot the history accuracy figure to visualize the result. We increased the accuracy by 0.22%.
 
-<p algin=ceter>
+   
 <img src='Resources/images/Attemp_2.PNG'  width=500 height=300 >
-</p>
+   
 
 #### Third Attempt: achieved the target model accuracy. Accuracy *77.21%*
 - Adding or reducing the number of epochs to the training regimen.
