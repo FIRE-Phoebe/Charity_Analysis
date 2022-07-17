@@ -1,7 +1,7 @@
-# Neural Network Charity Analysis
+# Charity Analysis
 
 ## Overview of the analysis
-Neural Network Charity Analysis program uses Deep Learning Models to analyze over 34,000 organizations that have received funding from business team will be successful. We use dataset features and target to help foundation predict the company's investment. Our goal is to optimize the Neural Network Deep Learning Model to achieve a target predictive accuracy more than 75%. 
+Charity Analysis program uses Deep Learning Models to analyze over 34,000 organizations that have received funding from business team will be successful. We use dataset features and target to help foundation predict the company's investment. Our goal is to optimize the Neural Network Deep Learning Model to achieve a target predictive accuracy more than 75%. 
 
 ## Results
 1st Attempt has improved **4.47%** for predict accuracy, 2nd and 3rd attempt only improved total **0.3%**, and final attempt improved performance by **0.21%**.
