@@ -117,4 +117,7 @@ Explaination for each columns that capture metadata:
 ## Summary
 According to the Charity analysis results, we adjust variables that consider to be the features which makes a big difference in our performance. In the 1st attempt, the model loss improved from *55.54%* to *47.75%* and accuracy have already achieve at *76.91%* after adding NAME feature, bins, and drop few noisy variables. In addition, we increase the number of neurons, hidden layers and activation to analyze the model that shows model improvements. Use different activation function will access the input data differently that might help the model to analyze data. Noisy variables, the number of neurons and hidden layers, activation function and epochs are the key factors to effect the model performance. Thus, we adjust those key factors on other attempts to optimize Neural Network. We are successful ultilize the model by almost 5% and acheive our target predictive accuracy at **77.42%**. In the future studies, we recommand to create for loop to find the best number of neurons, layers and activation functions to achieve the highest accuracy score for model optimization. 
 
+_______________________________________________________________________________________________________________________________________________________________
 
+- Project Contributor: Phoebe J. Miao
+- Email: phoebem2021data@gmail.com
